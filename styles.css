@@ -1,6 +1,12 @@
+:root {
+    --main-color: rgb(107, 148, 236);
+    --background-color: rgb(247, 247, 247);
+} 
+
 body, html {
     margin: 0;
     height: 100%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 #container {
@@ -10,15 +16,204 @@ body, html {
     height: 100%;
 }
 
+img {
+    object-fit: contain;
+}
+
+li {
+    list-style-type: none;
+}
+
+/* Header */
+
 header {
     background-color: rgb(247, 247, 247);
+    display: flex;
+    flex-direction: column;
 }
+
+#headerImages {
+    display: flex;
+    gap: 15px;
+}
+
+#headerUsername p {
+    margin: 0px;
+}
+
+#headerUsernameTop {
+    font-size: 14px
+}
+
+#headerUsernameBottom {
+    font-size: 26px;
+}
+
+#topHeader {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 25px;
+}
+
+#bottomHeader {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 25px;
+}
+
+#bottomHeaderRight {
+    display: flex;
+    gap: 25px;
+}
+
+#bottomHeaderRight button {
+    background-color: var(--main-color);
+    border-radius: 17px;
+    border: none;
+    color: white;
+    padding: 8px;
+    width: 75px;
+}
+
+#bottomHeaderLeft {
+    display: flex;
+    flex-grow: 1;
+}
+
+#headerUsername {
+    display: flex;
+    flex-direction: column;
+}
+
+#searchContainer {
+    display: flex;
+}
+
+#searchContainer input {
+    border-radius: 10px;
+    background-color: rgb(210, 219, 227);
+    border: none;
+}
+
+/* Sidebar */
 
 #sidebar {
-    background-color: rgb(107, 148, 236);
+    background-color: var(--main-color);
     grid-row: 1 / -1;
+    color: white;
 }
 
-#main {
-    background-color: rgb(209, 209, 209);
+#logo {
+    display: flex;
+    margin-left: 10px;
+    gap: 7px;
 }
+
+.sidebarLinks {
+    padding-left: 20px;
+}
+
+.sidebarLinks li {
+    padding-bottom: 10px;
+}
+
+.sidebarRow {
+    display: flex;
+    gap: 10px;
+}
+
+#sidebar h1 {
+    font-size: 1.5rem;
+}
+
+/* Main */
+
+#main {
+    background-color: rgb(212, 212, 212);
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+}
+
+#main p {
+    margin-top: 5px;
+}
+
+#projectsCardContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+
+#projects {
+    grid-row: 1 / 3;
+}
+
+.projectsCard {
+    background-color: rgb(247, 247, 247);
+    margin: 15px;
+    padding: 20px 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.projectsCard p {
+    color: grey;
+}
+
+h3 {
+    margin: 0px;
+    font-weight: bold;
+}
+
+#announcementsCardContainer, #trendingCardContainer {
+    background-color: var(--background-color);
+    margin: 15px;
+}
+
+#announcements p {
+    color: grey;
+}
+
+.announcementsCard {
+    padding: 20px;
+}
+
+#trending {
+    grid-column: 2;
+    grid-row: 2;
+}
+
+.trendingCard {
+    padding: 15px;
+    display: flex;
+}
+
+.trendingCard img {
+    width: 33%;
+    margin-right: 10px;
+}
+
+.trendingUser p {
+    margin: 0px;
+}
+
+.trendingUserTop {
+    font-weight: bold;
+}
+
+.trendingUserBottom {
+    color: grey;
+}
+
+#main h2 {
+    margin-left: 15px;
+    margin-bottom: 0px;
+}
+
+
+
+
+
+
+

@@ -10,117 +10,185 @@
 <body>
     <div id="container">
         <header>
-            <input type="search">
-            <div>Some images</div>
-            <p>Hi there</p>
-            <ul>
-                <li>New</li>
-                <li>Upload</li>
-                <li>Share</li>
-            </ul>
+            <div id="topHeader">
+                <div id="searchContainer">
+                    <img src="images/magnify.png" alt="magnifying glass">
+                    <input type="search">
+                </div>
+                <div id="headerImages">
+                    <img src="images/magnify.png" alt="icon">
+                    <img src="images/magnify.png" alt="icon">
+                    <img src="images/magnify.png" alt="icon">
+                </div>
+            </div>
+            <div id="bottomHeader">
+                <div id="bottomHeaderLeft">
+                    <img src="images/magnify.png" alt="icon">
+                    <div id="headerUsername">
+                        <p id="headerUsernameTop">Hi there,</p>
+                        <p id="headerUsernameBottom">Name (@name)</p>
+                    </div>
+                </div>
+                <ul id="bottomHeaderRight">
+                    <li><button>New</button></li>
+                    <li><button>Upload</button></li>
+                    <li><button>Share</button></li>
+                </ul>
+            </div>
         </header>
         <div id="sidebar">
             <div id="logo">
-                <div>Img</div>
-                <p>Dashboard</p>
+                <img src="images/account-arrow-right.png" alt="icon">
+                <h1>Dashboard</h1>
             </div>
-            <ul>
-                <li>Home</li>
-                <li>Profile</li>
-                <li>Messages</li>
-                <li>History</li>
-                <li>Tasks</li>
-                <li>Communities</li>
+            <ul class="sidebarLinks" id="topSidebarLinks">
+                <li> 
+                    <div class="sidebarRow">
+                        <img src="images/account-arrow-right.png" alt="icon">
+                        <p>Home</p>
+                    </div>
+                </li>
+                <li> 
+                    <div class="sidebarRow">
+                        <img src="images/account-arrow-right.png" alt="icon">
+                        <p>Profile</p>
+                    </div>
+                </li>
+                <li> 
+                    <div class="sidebarRow">
+                        <img src="images/account-arrow-right.png" alt="icon">
+                        <p>Messages</p>
+                    </div>
+                </li>
+                <li> 
+                    <div class="sidebarRow">
+                        <img src="images/account-arrow-right.png" alt="icon">
+                        <p>History</p>
+                    </div>
+                </li>
+                <li> 
+                    <div class="sidebarRow">
+                        <img src="images/account-arrow-right.png" alt="icon">
+                        <p>Tasks</p>
+                    </div>
+                </li>
+                <li> 
+                    <div class="sidebarRow">
+                        <img src="images/account-arrow-right.png" alt="icon">
+                        <p>Communities</p>
+                    </div>
+                </li>
             </ul>
-            <ul>
-                <li>Settings</li>
-                <li>Support</li>
-                <li>Privacy</li>
+            <ul class="sidebarLinks" id="bottomSidebarLinks">
+                <li> 
+                    <div class="sidebarRow">
+                        <img src="images/account-arrow-right.png" alt="icon">
+                        <p>Settings</p>
+                    </div>
+                </li>
+                <li> 
+                    <div class="sidebarRow">
+                        <img src="images/account-arrow-right.png" alt="icon">
+                        <p>Support</p>
+                    </div>
+                </li>
+                <li> 
+                    <div class="sidebarRow">
+                        <img src="images/account-arrow-right.png" alt="icon">
+                        <p>Privacy</p>
+                    </div>
+                </li>
             </ul>
         </div>
         <div id="main">
             <div id="projects">
-                <h1>Your Projects</h1>
-                <div class="projectsCard">
-                    <h2>Super Cool Project</h2>
-                    <p>text text text text text text text text text text text text text text text text text text text text text
-                        text text text text text text texttext text text text text text texttext text text text text text text
-                    </p>
-                </div>
-                <div class="projectsCard">
-                    <h2>Less Cool Project</h2>
-                    <p>text text text text text text text text text text text text text text text text text text text text text
-                        text text text text text text texttext text text text text text texttext text text text text text text
-                    </p>
-                </div>
-                <div class="projectsCard">
-                    <h2>Impossible App</h2>
-                    <p>text text text text text text text text text text text text text text text text text text text text text
-                        text text text text text text texttext text text text text text texttext text text text text text text
-                    </p>
-                </div>
-                <div class="projectsCard">
-                    <h2>Easy App</h2>
-                    <p>text text text text text text text text text text text text text text text text text text text text text
-                        text text text text text text texttext text text text text text texttext text text text text text text
-                    </p>
-                </div>
-                <div class="projectsCard">
-                    <h2>Ad Blocker</h2>
-                    <p>text text text text text text text text text text text text text text text text text text text text text
-                        text text text text text text texttext text text text text text texttext text text text text text text
-                    </p>
-                </div>
-                <div class="projectsCard">
-                    <h2>Money Maker</h2>
-                    <p>text text text text text text text text text text text text text text text text text text text text text
-                        text text text text text text texttext text text text text text texttext text text text text text text
-                    </p>
+                <h2>Your Projects</h2>
+                <div id="projectsCardContainer">
+                    <div class="projectsCard">
+                        <h3>Super Cool Project</h3>
+                        <p>text text text text text text text text text text text text text text text text text text text text text
+                            text text text text text text texttext text text text text text texttext text text text text text text
+                        </p>
+                    </div>
+                    <div class="projectsCard">
+                        <h3>Less Cool Project</h3>
+                        <p>text text text text text text text text text text text text text text text text text text text text text
+                            text text text text text text texttext text text text text text texttext text text text text text text
+                        </p>
+                    </div>
+                    <div class="projectsCard">
+                        <h3>Impossible App</h3>
+                        <p>text text text text text text text text text text text text text text text text text text text text text
+                            text text text text text text texttext text text text text text texttext text text text text text text
+                        </p>
+                    </div>
+                    <div class="projectsCard">
+                        <h3>Easy App</h3>
+                        <p>text text text text text text text text text text text text text text text text text text text text text
+                            text text text text text text texttext text text text text text texttext text text text text text text
+                        </p>
+                    </div>
+                    <div class="projectsCard">
+                        <h3>Ad Blocker</h3>
+                        <p>text text text text text text text text text text text text text text text text text text text text text
+                            text text text text text text texttext text text text text text texttext text text text text text text
+                        </p>
+                    </div>
+                    <div class="projectsCard">
+                        <h3>Money Maker</h3>
+                        <p>text text text text text text text text text text text text text text text text text text text text text
+                            text text text text text text texttext text text text text text texttext text text text text text text
+                        </p>
+                    </div>
                 </div>
             </div>
            <div id="announcements">
                 <h2>Announcements</h2>
-                <div class="announcementsCard">
-                    <h3>Site Maintenance</h3>
-                    <p>text text text text text text text text text text text text text</p>
-                </div>
-                <div class="announcementsCard">
-                    <h3>Community Share Day</h3>
-                    <p>text text text text text text text text text text text text text</p>
-                </div>
-                <div class="announcementsCard">
-                    <h3>Updated Privacy Policy</h3>
-                    <p>text text text text text text text text text text text text text</p>
+                <div id="announcementsCardContainer">
+                    <div class="announcementsCard">
+                        <h3>Site Maintenance</h3>
+                        <p>text text text text text text text text text text text text text</p>
+                    </div>
+                    <div class="announcementsCard">
+                        <h3>Community Share Day</h3>
+                        <p>text text text text text text text text text text text text text</p>
+                    </div>
+                    <div class="announcementsCard">
+                        <h3>Updated Privacy Policy</h3>
+                        <p>text text text text text text text text text text text text text</p>
+                    </div>
                 </div>
            </div>
            <div id="trending">
                 <h2>Trending</h2>
-                <div class="trendingCard">
-                    <div>Img</div>
-                    <div>
-                        <p>@tegan</p>
-                        <p>World Peace Builder</p>
+                <div id="trendingCardContainer">
+                    <div class="trendingCard">
+                        <img src="images/magnify.png" alt="icon">
+                        <div class="trendingUser">
+                            <p class="trendingUserTop">@tegan</p>
+                            <p class="trendingUserBottom">World Peace Builder</p>
+                        </div>
                     </div>
-                </div>
-                <div class="trendingCard">
-                    <div>Img</div>
-                    <div>
-                        <p>@morgan</p>
-                        <p>Super Cool Project</p>
+                    <div class="trendingCard">
+                        <img src="images/magnify.png" alt="icon">
+                        <div class="trendingUser">
+                            <p class="trendingUserTop">@morgan</p>
+                            <p class="trendingUserBottom">Super Cool Project</p>
+                        </div>
                     </div>
-                </div>
-                <div class="trendingCard">
-                    <div>Img</div>
-                    <div>
-                        <p>@kendall</p>
-                        <p>Life Changing App</p>
+                    <div class="trendingCard">
+                        <img src="images/magnify.png" alt="icon">
+                        <div class="trendingUser">
+                            <p class="trendingUserTop">@kendall</p>
+                            <p class="trendingUserBottom">Life Changing App</p>
+                        </div>
                     </div>
-                </div>
-                <div class="trendingCard">
-                    <div>Img</div>
-                    <div>
-                        <p>@alex</p>
-                        <p>No Traffic Maker</p>
+                    <div class="trendingCard">
+                        <img src="images/magnify.png" alt="icon">
+                        <div class="trendingUser">
+                            <p class="trendingUserTop">@alex</p>
+                            <p class="trendingUserBottom">No Traffic Maker</p>
+                        </div>
                     </div>
                 </div>
            </div>
