@@ -50,7 +50,8 @@ header {
 
 #topHeaderRight {
     display: flex;
-    gap: 15px;
+    align-items: center;
+    gap: 20px;
 }
 
 #topHeaderRight p {
@@ -72,12 +73,18 @@ header {
 #topHeader {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     padding: 15px 25px;
+}
+
+#topHeaderRight img {
+    height: 30px;
 }
 
 #bottomHeader {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     padding: 10px 25px;
 }
 
@@ -99,6 +106,13 @@ header {
 #bottomHeaderLeft {
     display: flex;
     flex-grow: 1;
+    align-items: center;
+    gap: 5px;
+}
+
+#bottomHeaderLeft img {
+    height: 70px;
+    margin: 10px;
 }
 
 #headerUsername {
@@ -106,8 +120,13 @@ header {
     flex-direction: column;
 }
 
+#bellIcon {
+    height: 25px !important;
+}
+
 #searchContainer {
     display: flex;
+    align-items: center;
     gap: 7px;
     width: 50%;
 }
@@ -127,11 +146,17 @@ header {
     color: white;
 }
 
+#sidebar a {
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+}
+
 #logo {
     display: flex;
     gap: 7px;
     align-items: center;
-    margin: 15px;
+    margin: 15px 15px 25px 15px;
 }
 
 .sidebarLinks {
@@ -139,16 +164,20 @@ header {
 }
 
 .sidebarLinks li {
-    padding-bottom: 10px;
+    padding-bottom: 25px;
 }
 
 .sidebarRow {
     display: flex;
-    gap: 10px;
+    gap: 15px;
 }
 
 #sidebar h1 {
     font-size: 1.5rem;
+}
+
+.sidebarLinks img {
+    height: 25px;
 }
 
 /* Main */
@@ -158,8 +187,7 @@ header {
     display: grid;
     grid-template-columns: 2fr 1fr;
     grid-template-rows: 1fr 1fr;
-    padding-left: 15px;
-    padding-right: 15px;
+    padding: 15px;
 }
 
 #main p {
@@ -216,6 +244,7 @@ header {
     grid-template-rows: repeat(3, 1fr);
     border-radius: 10px;
     box-shadow: 2px 2px 5px var(--shadow-color);
+    align-items: center;
 }
 
 #trending {
