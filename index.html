@@ -10,26 +10,26 @@
 <body>
     <div id="container">
         <header>
-            <div id="topHeader">
+            <div id="top">
                 <div id="searchContainer">
-                    <img src="images/magnify.png" alt="magnifying glass">
-                    <input type="search">
+                    <input type="image" src="images/magnify.png" alt="magnifying glass" id="searchBarIcon">
+                    <input type="search" id="searchBar">
                 </div>
-                <div id="topHeaderRight">
-                    <img src="images/bell-outline.png" alt="bell icon" id="bellIcon">
-                    <img src="images/seymour.png" alt="avatar">
-                    <p>Seymour</p>
+                <div id="right">
+                    <input type="image" src="images/bell-outline.png" alt="bell icon" id="bellIcon">
+                    <input type="image" src="images/seymour.png" alt="avatar" id="avatar">
+                    <a href="#">Seymour</a>
                 </div>
             </div>
-            <div id="bottomHeader">
-                <div id="bottomHeaderLeft">
+            <div id="bottom">
+                <div id="left">
                     <img src="images/seymour.png" alt="avatar">
-                    <div id="headerUsername">
-                        <p id="headerUsernameTop">Hi there,</p>
-                        <p id="headerUsernameBottom">Seymour (@suddenlyseymour)</p>
+                    <div id="username">
+                        <p id="usernameTop">Hi there,</p>
+                        <p id="usernameBottom">Seymour (@suddenlyseymour)</p>
                     </div>
                 </div>
-                <ul id="bottomHeaderRight">
+                <ul>
                     <li><button>New</button></li>
                     <li><button>Upload</button></li>
                     <li><button>Share</button></li>
@@ -38,69 +38,69 @@
         </header>
         <div id="sidebar">
             <div id="logo">
-                <img src="images/sprout.png" alt="icon">
-                <h1>Plants</h1>
+                <input type="image" src="images/sprout.png" alt="sprout icon">
+                <h1><a href="#">Plants</a></h1>
             </div>
-            <ul class="sidebarLinks" id="topSidebarLinks">
+            <ul class="links" id="topLinks">
                 <li> 
-                    <div class="sidebarRow">
-                        <img src="images/home.png" alt="home icon">
+                    <div class="row">
+                        <input type="image" class="icon" src="images/home.png" alt="home icon">
                         <a href="#">Home</a>
                     </div>
                 </li>
                 <li> 
-                    <div class="sidebarRow">
-                        <img src="images/account.png" alt="account icon">
+                    <div class="row">
+                        <input type="image" class="icon" src="images/account.png" alt="account icon">
                         <a href="#">Profile</a>
                     </div>
                 </li>
                 <li> 
-                    <div class="sidebarRow">
-                        <img src="images/message.png" alt="message icon">
+                    <div class="row">
+                        <input type="image" class="icon" src="images/message.png" alt="message icon">
                         <a href="#">Messages</a>
                     </div>
                 </li>
                 <li> 
-                    <div class="sidebarRow">
-                        <img src="images/clock-outline.png" alt="clock icon">
+                    <div class="row">
+                        <input type="image" class="icon" src="images/clock.png" alt="clock icon">
                         <a href="#">History</a>
                     </div>
                 </li>
                 <li> 
-                    <div class="sidebarRow">
-                        <img src="images/calendar-check.png" alt="calendar icon">
+                    <div class="row">
+                        <input type="image" class="icon" src="images/calendar-check.png" alt="calendar icon">
                         <a href="#">Tasks</a>
                     </div>
                 </li>
                 <li> 
-                    <div class="sidebarRow">
-                        <img src="images/account-group.png" alt="people icon">
+                    <div class="row">
+                        <input type="image" class="icon" src="images/account-group.png" alt="people icon">
                         <a href="#">Communities</a>
                     </div>
                 </li>
             </ul>
-            <ul class="sidebarLinks" id="bottomSidebarLinks">
+            <ul class="links" id="bottomLinks">
                 <li> 
-                    <div class="sidebarRow">
-                        <img src="images/cog-outline.png" alt="gear icon">
+                    <div class="row">
+                        <input type="image" class="icon" src="images/cog.png" alt="gear icon">
                         <a href="#">Settings</a>
                     </div>
                 </li>
                 <li> 
-                    <div class="sidebarRow">
-                        <img src="images/help-box.png" alt="question mark icon">
+                    <div class="row">
+                        <input type="image" class="icon" src="images/help-box.png" alt="question mark icon">
                         <a href="#">Support</a>
                     </div>
                 </li>
                 <li> 
-                    <div class="sidebarRow">
-                        <img src="images/check-circle.png" alt="checkmark icon">
+                    <div class="row">
+                        <input type="image" class="icon" src="images/checkbox-marked-circle.png" alt="checkmark icon">
                         <a href="#">Privacy</a>
                     </div>
                 </li>
             </ul>
         </div>
-        <div id="main">
+        <main>
             <div id="projects">
                 <h2>Projects</h2>
                 <div id="projectsCardContainer">
@@ -164,35 +164,35 @@
                 <div id="trendingCardContainer">
                     <div class="trendingCard">
                         <img src="images/dewy-plant.png" alt="dewy plant">
-                        <div class="trendingUser">
-                            <p class="trendingUserTop">@willow</p>
-                            <p class="trendingUserBottom">Gardener</p>
+                        <div class="user">
+                            <p class="userTop">@willow</p>
+                            <p class="userBottom">Gardener</p>
                         </div>
                     </div>
                     <div class="trendingCard">
                         <img src="images/branch.png" alt="branch">
-                        <div class="trendingUser">
-                            <p class="trendingUserTop">@ash</p>
-                            <p class="trendingUserBottom">Plant Psychic</p>
+                        <div class="user">
+                            <p class="userTop">@ash</p>
+                            <p class="userBottom">Plant Psychic</p>
                         </div>
                     </div>
                     <div class="trendingCard">
                         <img src="images/tree.png" alt="tree">
-                        <div class="trendingUser">
-                            <p class="trendingUserTop">@oliver</p>
-                            <p class="trendingUserBottom">Amazing Tree App</p>
+                        <div class="user">
+                            <p class="userTop">@oliver</p>
+                            <p class="userBottom">Amazing Tree App</p>
                         </div>
                     </div>
                     <div class="trendingCard">
                         <img src="images/seed.png" alt="seed">
-                        <div class="trendingUser">
-                            <p class="trendingUserTop">@bracken</p>
-                            <p class="trendingUserBottom">Seeds Galore</p>
+                        <div class="user">
+                            <p class="userTop">@bracken</p>
+                            <p class="userBottom">Seeds Galore</p>
                         </div>
                     </div>
                 </div>
            </div>
-        </div>
+        </main>
     </div>
 </body>
 </html>
