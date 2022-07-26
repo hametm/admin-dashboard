@@ -8,191 +8,171 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div id="container">
-        <header>
-            <div id="top">
-                <div id="searchContainer">
-                    <input type="image" src="images/magnify.png" alt="magnifying glass" id="searchBarIcon">
-                    <input type="search" id="searchBar">
-                </div>
-                <div id="right">
-                    <input type="image" src="images/bell-outline.png" alt="bell icon" id="bellIcon">
-                    <input type="image" src="images/seymour.png" alt="avatar" id="avatar">
-                    <a href="#">Seymour</a>
+    <header>
+        <div id="top">
+            <div id="searchContainer">
+                <input type="image" src="./images/magnify.png" alt="magnifying glass" id="searchBarIcon">
+                <input type="search" id="searchBar">
+            </div>
+            <div id="right">
+                <input type="image" src="./images/bell-outline.png" alt="bell icon" id="bellIcon">
+                <input type="image" src="./images/seymour.png" alt="avatar" id="avatar">
+                <a href="#">Seymour</a>
+            </div>
+        </div>
+        <div id="bottom">
+            <div id="left">
+                <img src="images/seymour.png" alt="avatar">
+                <div id="username">
+                    <p id="usernameTop">Hi there,</p>
+                    <p id="usernameBottom">Seymour (@suddenlyseymour)</p>
                 </div>
             </div>
-            <div id="bottom">
-                <div id="left">
-                    <img src="images/seymour.png" alt="avatar">
-                    <div id="username">
-                        <p id="usernameTop">Hi there,</p>
-                        <p id="usernameBottom">Seymour (@suddenlyseymour)</p>
-                    </div>
-                </div>
-                <ul>
-                    <li><button>New</button></li>
-                    <li><button>Upload</button></li>
-                    <li><button>Share</button></li>
-                </ul>
-            </div>
-        </header>
-        <div id="sidebar">
-            <div id="logo">
-                <input type="image" src="images/sprout.png" alt="sprout icon">
-                <h1><a href="#">Plants</a></h1>
-            </div>
-            <ul class="links" id="topLinks">
-                <li> 
-                    <div class="row">
-                        <input type="image" class="icon" src="images/home.png" alt="home icon">
-                        <a href="#">Home</a>
-                    </div>
-                </li>
-                <li> 
-                    <div class="row">
-                        <input type="image" class="icon" src="images/account.png" alt="account icon">
-                        <a href="#">Profile</a>
-                    </div>
-                </li>
-                <li> 
-                    <div class="row">
-                        <input type="image" class="icon" src="images/message.png" alt="message icon">
-                        <a href="#">Messages</a>
-                    </div>
-                </li>
-                <li> 
-                    <div class="row">
-                        <input type="image" class="icon" src="images/clock.png" alt="clock icon">
-                        <a href="#">History</a>
-                    </div>
-                </li>
-                <li> 
-                    <div class="row">
-                        <input type="image" class="icon" src="images/calendar-check.png" alt="calendar icon">
-                        <a href="#">Tasks</a>
-                    </div>
-                </li>
-                <li> 
-                    <div class="row">
-                        <input type="image" class="icon" src="images/account-group.png" alt="people icon">
-                        <a href="#">Communities</a>
-                    </div>
-                </li>
-            </ul>
-            <ul class="links" id="bottomLinks">
-                <li> 
-                    <div class="row">
-                        <input type="image" class="icon" src="images/cog.png" alt="gear icon">
-                        <a href="#">Settings</a>
-                    </div>
-                </li>
-                <li> 
-                    <div class="row">
-                        <input type="image" class="icon" src="images/help-box.png" alt="question mark icon">
-                        <a href="#">Support</a>
-                    </div>
-                </li>
-                <li> 
-                    <div class="row">
-                        <input type="image" class="icon" src="images/checkbox-marked-circle.png" alt="checkmark icon">
-                        <a href="#">Privacy</a>
-                    </div>
-                </li>
+            <ul>
+                <li><button>New</button></li>
+                <li><button>Upload</button></li>
+                <li><button>Share</button></li>
             </ul>
         </div>
-        <main>
-            <div id="projects">
-                <h2>Projects</h2>
-                <div id="projectsCardContainer">
-                    <div class="projectsCard">
-                        <h3>Super Plant Project</h3>
-                        <p>Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                             Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.
-                        </p>
-                    </div>
-                    <div class="projectsCard">
-                        <h3>Another Plant Project</h3>
-                        <p>Illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem
-                             quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
-                        </p>
-                    </div>
-                    <div class="projectsCard">
-                        <h3>Impossible Plant App</h3>
-                        <p>Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut 
-                            aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea. 
-                        </p>
-                    </div>
-                    <div class="projectsCard">
-                        <h3>Easy Plant App</h3>
-                        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam 
-                            rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta. 
-                        </p>
-                    </div>
-                    <div class="projectsCard">
-                        <h3>Ad Blocker for Plants</h3>
-                        <p>Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in 
-                            voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat.
-                        </p>
-                    </div>
-                    <div class="projectsCard">
-                        <h3>Money Maker</h3>
-                        <p>Qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit 
-                            amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et.
-                        </p>
-                    </div>
+    </header>
+    <div id="sidebar">
+        <div id="logo">
+            <input type="image" src="./images/sprout.png" alt="sprout icon">
+            <a href="#"><h1>Plants</h1></a>
+        </div>
+        <ul class="links" id="topLinks">
+            <li class="row"> 
+                <input type="image" class="icon" src="./images/home.png" alt="">
+                <a href="#">Home</a>
+            </li>
+            <li class="row"> 
+                <input type="image" class="icon" src="./images/account.png" alt="">
+                <a href="#">Profile</a>
+            </li>
+            <li class="row"> 
+                <input type="image" class="icon" src="./images/message.png" alt="">
+                <a href="#">Messages</a>
+            </li>
+            <li class="row"> 
+                <input type="image" class="icon" src="./images/clock.png" alt="">
+                <a href="#">History</a>
+            </li>
+            <li class="row"> 
+                <input type="image" class="icon" src="./images/calendar-check.png" alt="">
+                <a href="#">Tasks</a>
+            </li>
+            <li class="row"> 
+                <input type="image" class="icon" src="./images/account-group.png" alt="">
+                <a href="#">Communities</a>
+            </li>
+        </ul>
+        <ul class="links" id="bottomLinks">
+            <li class="row"> 
+                <input type="image" class="icon" src="./images/cog.png" alt="">
+                <a href="#">Settings</a>
+            </li>
+            <li class="row"> 
+                <input type="image" class="icon" src="./images/help-box.png" alt="">
+                <a href="#">Support</a>
+            </li>
+            <li class="row"> 
+                <input type="image" class="icon" src="./images/checkbox-marked-circle.png" alt="">
+                <a href="#">Privacy</a>
+            </li>
+        </ul>
+    </div>
+    <main>
+        <section id="projects">
+            <h2>Projects</h2>
+            <div id="projectsCardContainer">
+                <div class="projectsCard">
+                    <h3>Super Plant Project</h3>
+                    <p>Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.
+                    </p>
+                </div>
+                <div class="projectsCard">
+                    <h3>Another Plant Project</h3>
+                    <p>Illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem
+                            quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
+                    </p>
+                </div>
+                <div class="projectsCard">
+                    <h3>Impossible Plant App</h3>
+                    <p>Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut 
+                        aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea. 
+                    </p>
+                </div>
+                <div class="projectsCard">
+                    <h3>Easy Plant App</h3>
+                    <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam 
+                        rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta. 
+                    </p>
+                </div>
+                <div class="projectsCard">
+                    <h3>Ad Blocker for Plants</h3>
+                    <p>Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in 
+                        voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat.
+                    </p>
+                </div>
+                <div class="projectsCard">
+                    <h3>Money Maker</h3>
+                    <p>Qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit 
+                        amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et.
+                    </p>
                 </div>
             </div>
-           <div id="announcements">
-                <h2>Announcements</h2>
-                <div id="announcementsCard">
-                    <div>
-                        <h3>Site Maintenance</h3>
-                        <p>Beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur.</p>
-                    </div>
-                   <div>
-                        <h3>Community Tree Day</h3>
-                        <p>Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur.</p>
-                   </div>
-                    <div>
-                        <h3>Updated Privacy Policy</h3>
-                        <p>Veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure. </p>
-                    </div>
+        </section>
+        <section id="announcements">
+            <h2>Announcements</h2>
+            <div id="announcementsCard">
+                <div>
+                    <h3>Site Maintenance</h3>
+                    <p>Beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur.</p>
                 </div>
-           </div>
-           <div id="trending">
-                <h2>Trending</h2>
-                <div id="trendingCardContainer">
-                    <div class="trendingCard">
-                        <img src="images/dewy-plant.png" alt="dewy plant">
-                        <div class="user">
-                            <p class="userTop">@willow</p>
-                            <p class="userBottom">Gardener</p>
-                        </div>
-                    </div>
-                    <div class="trendingCard">
-                        <img src="images/branch.png" alt="branch">
-                        <div class="user">
-                            <p class="userTop">@ash</p>
-                            <p class="userBottom">Plant Psychic</p>
-                        </div>
-                    </div>
-                    <div class="trendingCard">
-                        <img src="images/tree.png" alt="tree">
-                        <div class="user">
-                            <p class="userTop">@oliver</p>
-                            <p class="userBottom">Amazing Tree App</p>
-                        </div>
-                    </div>
-                    <div class="trendingCard">
-                        <img src="images/seed.png" alt="seed">
-                        <div class="user">
-                            <p class="userTop">@bracken</p>
-                            <p class="userBottom">Seeds Galore</p>
-                        </div>
-                    </div>
+                <div>
+                    <h3>Community Tree Day</h3>
+                    <p>Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur.</p>
                 </div>
-           </div>
-        </main>
-    </div>
+                <div>
+                    <h3>Updated Privacy Policy</h3>
+                    <p>Veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure. </p>
+                </div>
+            </div>
+        </section>
+        <section id="trending">
+            <h2>Trending</h2>
+            <div id="trendingCardContainer">
+                <figure class="trendingCard">
+                    <img src="./images/dewy-plant.png" alt="dewy plant">
+                    <figcaption class="user">
+                        <p class="userTop">@willow</p>
+                        <p class="userBottom">Gardener</p>
+                    </figcaption>
+                </figure>
+                <figure class="trendingCard">
+                    <img src="./images/branch.png" alt="branch">
+                    <figcaption class="user">
+                        <p class="userTop">@ash</p>
+                        <p class="userBottom">Plant Psychic</p>
+                    </figcaption>
+                </figure>
+                <figure class="trendingCard">
+                    <img src="./images/tree.png" alt="tree">
+                    <figcaption class="user">
+                        <p class="userTop">@oliver</p>
+                        <p class="userBottom">Amazing Tree App</p>
+                    </figcaption>
+                </figure>
+                <figure class="trendingCard">
+                    <img src="./images/seed.png" alt="seed">
+                    <figcaption class="user">
+                        <p class="userTop">@bracken</p>
+                        <p class="userBottom">Seeds Galore</p>
+                    </figcaption>
+                </figure>
+            </div>
+        </section>
+    </main>
 </body>
 </html>
